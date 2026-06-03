@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Promesa de Amor | Malub & Cristian</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuentes elegantes e inspiración vintage -->
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Fondo de Flores Oscuras y Elegantes -->
+    <div class="floral-background"></div>
+
+    <!-- Reproductor de Música de Fondo (Saxofón Relajante) -->
+    <div class="music-container fade-in">
+        <p class="music-title">Acompáñanos con música</p>
+        <audio controls autoplay loop class="wedding-audio" id="bgAudio">
+            <!-- Pista MP3 instrumental de Saxofón Jazz Relajante -->
+            <source src="https://feeds.soundcloud.com/stream/554065455-unminus-jazz-mezzo.mp3" type="audio/mpeg">
+            <source src="https://cdn.pixabay.com/download/audio/2022/02/22/audio_c8bd201c13.mp3?filename=saxophone-jazz-101476.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <p class="music-note">* Presiona Play para activar el saxofón instrumental.</p>
+    </div>
+
+    <div class="invitation-container">
+        
+        <!-- SECCIÓN 1: Portada de Lujo -->
+        <header class="section cover-section fade-in">
+            <div class="corner-flower-top-left"></div>
+            <div class="corner-flower-top-right"></div>
+            
+            <h3 class="subtitle-vintage">Nuestra Unión Sagrada</h3>
+            <h1 class="names-vintage">Malub <span class="ampersand">&</span> Cristian</h1>
+            
+            <div class="date-vintage-box">
+                <p class="save-the-date">Reserva la Fecha</p>
+                <p class="wedding-date">Viernes, 18 de Diciembre de 2026</p>
+            </div>
+
+            <!-- Cuenta Regresiva Dinámica -->
+            <div class="countdown-vintage" id="countdown">
+                <div class="time-card"><span id="days">00</span><p>Días</p></div>
+                <div class="time-card"><span id="hours">00</span><p>Horas</p></div>
+                <div class="time-card"><span id="mins">00</span><p>Minutos</p></div>
+                <div class="time-card"><span id="secs">00</span><p>Segundos</p></div>
+            </div>
+        </header>
+
+        <div class="vintage-divider"></div>
+
+        <!-- SECCIÓN 2: Galería de Fotos (Tus imágenes integradas con diseño de arco) -->
+        <section class="section gallery-section fade-in">
+            <div class="card-inner-border">
+                <h2 class="section-title-vintage">Nuestros Momentos</h2>
+                <div class="gallery-grid">
+                    <img src="WhatsApp Image 2026-06-02 at 7.24.30 PM.jpeg" alt="Malub y Cristian" class="gallery-img">
+                    <img src="WhatsApp Image 2026-06-02 at 7.25.15 PM.jpeg" alt="Ceremonia" class="gallery-img">
+                    <img src="WhatsApp Image 2026-06-02 at 7.25.15 PM (1).jpeg" alt="Recepción Floral" class="gallery-img">
+                    <img src="WhatsApp Image 2026-06-02 at 7.25.16 PM.jpeg" alt="Mesa de Honor" class="gallery-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: El Mensaje Lírico -->
+        <section class="section message-section fade-in">
+            <p class="romantic-poem">
+                "El amor todo lo sufre, todo lo cree, todo lo espera, todo lo soporta. El amor nunca deja de ser."
+            </p>
+            <p class="romantic-body">
+                Con la bendición de Dios y el amor de nuestras familias, tenemos el honor de invitarle a celebrar el inicio de este hermoso capítulo en nuestras vidas. Su presencia hará que este día se llene de colores y eterna alegría.
+            </p>
+        </section>
+
+        <!-- SECCIÓN 4: La Celebración & Ubicación -->
+        <section class="section card-vintage location-section fade-in">
+            <div class="card-inner-border">
+                <h2 class="section-title-vintage">La Ceremonia y Recepción</h2>
+                <div class="event-details-vintage">
+                    <p class="time-highlight">A las 16:00 horas</p>
+                    <p class="details-text">
+                        Nos uniremos en matrimonio y posteriormente celebraremos con una cena de honor. Hemos preparado un ambiente lleno de naturaleza, música y amor para compartirlo junto a ustedes.
+                    </p>
+                    <a href="https://www.google.com/maps/place/14%C2%B059'47.0%22N+89%C2%B034'45.8%22W" target="_blank" class="btn-vintage">Ver Mapa de Ubicación</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: Vestimenta Exclusiva -->
+        <section class="section card-vintage dresscode-section fade-in">
+            <div class="card-inner-border">
+                <h2 class="section-title-vintage">Código de Vestimenta</h2>
+                <h3 class="dress-style">Formal</h3>
+                <p class="details-text">Agradecemos su asistencia luciendo sus mejores galas, acompañando la elegancia de la noche.</p>
+                <p class="bride-restriction">* Rogamos gentilmente reservar el color blanco y tonos marfil exclusivamente para la novia.</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 6: Confirmación de Asistencia Dinámica (Lógica blindada) -->
+        <section class="section card-vintage rsvp-section fade-in">
+            <div class="card-inner-border">
+                <h2 class="section-title-vintage">Confirmación de Asistencia</h2>
+                <p class="details-text">Para nosotros es fundamental contar con su grata presencia. Por favor, valide su pase ingresando el código de su invitación física.</p>
+                
+                <form id="rsvp-form" class="form-vintage">
+                    <input type="text" id="guest-id" placeholder="CÓDIGO DE INVITACIÓN (Ej: ID-6615)" required autocomplete="off">
+                    <button type="submit" class="btn-vintage btn-submit" id="submit-btn">Validar y Confirmar</button>
+                </form>
+                
+                <div id="form-message" class="message-vintage"></div>
+                
+                <div id="guest-info" class="guest-info-vintage">
+                    <p class="guest-row"><strong>Invitado de Honor:</strong> <span id="guest-name"></span></p>
+                    <p class="guest-row"><strong>Pases Concedidos:</strong> <span id="guest-passes"></span></p>
+                    <p class="guest-status-msg">✓ Su asistencia ha sido registrada con éxito. ¡Le esperamos!</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-vintage">
+            <div class="corner-flower-bottom-left"></div>
+            <div class="corner-flower-bottom-right"></div>
+            <p>Malub & Cristian</p>
+            <span class="footer-sub">Por siempre, amor.</span>
+        </footer>
+
+    </div>
+
+    <!-- SCRIPTS MANTENIENDO LA LÓGICA DE CONFIRMACIÓN Y EL RELOJ -->
+    <script>
+        // Volumen controlado para el saxofón relajante
+        document.addEventListener("DOMContentLoaded", function() {
+            var audio = document.getElementById("bgAudio");
+            if(audio) { audio.volume = 0.4; }
+        });
+
+        // Reloj de cuenta regresiva
+        const weddingDate = new Date("Dec 18, 2026 16:00:00").getTime();
+        const timer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days < 10 ? '0' + days : days;
+            document.getElementById("hours").innerHTML = hours < 10 ? '0' + hours : hours;
+            document.getElementById("mins").innerHTML = minutes < 10 ? '0' + minutes : minutes;
+            document.getElementById("secs").innerHTML = seconds < 10 ? '0' + seconds : seconds;
+
+            if (distance < 0) {
+                clearInterval(timer);
+                document.getElementById("countdown").innerHTML = "<p class='wedding-date'>¡Hoy es nuestro gran día!</p>";
+            }
+        }, 1000);
+
+        // Lógica de confirmación con redirección controlada (evita bloqueos de Google Script)
+        document.getElementById('rsvp-form').addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            
+            const guestId = document.getElementById('guest-id').value.toUpperCase().trim();
+            const messageEl = document.getElementById('form-message');
+            const submitBtn = document.getElementById('submit-btn');
+            const guestInfoEl = document.getElementById('guest-info');
+            
+            if (!guestId) {
+                messageEl.className = 'message-vintage error';
+                messageEl.style.display = 'block';
+                messageEl.innerText = "Por favor, introduzca su código.";
+                return;
+            }
+            
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzV68qJ_pBPy3E5K0m69pClSu0DaQuGNxhlmkRWWYae6RolxtK1q0zKSQX6RqlMIOpO/exec';
+
+            messageEl.className = 'message-vintage loading';
+            messageEl.style.display = 'block';
+            messageEl.innerText = "Buscando sus datos en el libro de oro...";
+            submitBtn.disabled = true; 
+            submitBtn.innerText = "Buscando...";
+            guestInfoEl.classList.remove('show');
+
+            // Petición GET optimizada con redirección permitida
+            fetch(scriptURL + '?id=' + encodeURIComponent(guestId), { redirect: 'follow' })
+              .then(response => {
+                  if (!response.ok) { throw new Error('Error de red al conectar con el servidor.'); }
+                  return response.json();
+              })
+              .then(data => {
+                  if(data.status === 'success') {
+                      const formData = new URLSearchParams();
+                      formData.append('id', guestId);
+                      formData.append('confirmed', 'SÍ');
+
+                      // Envío POST optimizado con seguimiento de redirección de Google
+                      return fetch(scriptURL, {
+                          method: 'POST',
+                          body: formData,
+                          redirect: 'follow'
+                      })
+                      .then(res => {
+                          if (!res.ok) { throw new Error('Error al registrar la confirmación.'); }
+                          return res.json();
+                      })
+                      .then(confirmData => {
+                          if(confirmData.status === 'success') {
+                              messageEl.className = 'message-vintage success';
+                              messageEl.innerText = "¡Confirmación exitosa!";
+                              document.getElementById('guest-name').innerText = data.nombre;
+                              document.getElementById('guest-passes').innerText = data.pases + " persona(s)";
+                              guestInfoEl.classList.add('show');
+                              document.getElementById('guest-id').value = '';
+                          } else {
+                              throw new Error('La hoja de cálculo rechazó la actualización.');
+                          }
+                      });
+                  } else {
+                      messageEl.className = 'message-vintage error';
+                      messageEl.innerText = "El código '" + guestId + "' no coincide con nuestros registros. Inténtelo de nuevo.";
+                      guestInfoEl.classList.remove('show');
+                  }
+              })
+              .catch(error => {
+                  messageEl.className = 'message-vintage error';
+                  messageEl.innerText = "Error de enlace: Asegúrese de usar un ID válido o intente más tarde.";
+                  console.error(error);
+                  guestInfoEl.classList.remove('show');
+              })
+              .finally(() => {
+                  submitBtn.disabled = false;
+                  submitBtn.innerText = "Validar y Confirmar";
+              });
+        });
+    </script>
+</body>
+</html>

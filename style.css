@@ -1,0 +1,506 @@
+/* Paleta de Colores Exclusiva: Verde Olivo, Dorado y Detalles Botánicos Oscuros */
+:root {
+    --bg-dark-green: #1a2416;    /* Fondo base verde bosque profundo */
+    --card-green: #24301d;       /* Verde olivo intenso para los bloques contenedores */
+    --gold-pure: #d4af37;        /* Oro pulido medieval */
+    --gold-light: #fbe5a2;       /* Oro claro brillante */
+    --text-cream: #f6eedb;       /* Crema muy suave y fino para evitar la frialdad del blanco */
+    --card-bg-vintage: rgba(36, 48, 29, 0.94); /* Tarjetas con cuerpo, color y opacidad elegante */
+    --border-gold-alpha: rgba(212, 175, 55, 0.45);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-dark-green);
+    color: var(--text-cream);
+    text-align: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Fondo Fijo con Textura de Flores Oscuras y Exóticas */
+.floral-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031?q=80&w=1400&auto=format&fit=crop'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.38; /* Aporta color floral y vida al fondo sin opacar el texto */
+    z-index: -2;
+    pointer-events: none;
+}
+
+/* Panel de Música de Fondo Estilo Vintage */
+.music-container {
+    background: rgba(36, 48, 29, 0.9);
+    border-bottom: 2px solid var(--gold-pure);
+    padding: 14px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    position: relative;
+    z-index: 10;
+}
+
+.music-title {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    letter-spacing: 2.5px;
+    color: var(--gold-light);
+    text-transform: uppercase;
+}
+
+.wedding-audio {
+    max-width: 290px;
+    height: 34px;
+    outline: none;
+    border-radius: 25px;
+}
+
+.music-note {
+    font-size: 0.65rem;
+    color: var(--gold-pure);
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Contenedor de la Invitación */
+.invitation-container {
+    max-width: 530px;
+    margin: 0 auto;
+    padding: 45px 20px 90px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    position: relative;
+}
+
+/* Tipografía de la Cabecera */
+.names-vintage {
+    font-family: 'Alex Brush', cursive;
+    font-size: 4.8rem;
+    color: var(--gold-pure);
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.8);
+    line-height: 1.05;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.ampersand {
+    font-family: 'Cinzel', serif;
+    font-size: 2.3rem;
+    color: var(--text-cream);
+    display: block;
+    margin: 4px 0;
+}
+
+.subtitle-vintage {
+    font-family: 'Cinzel', serif;
+    font-size: 1.05rem;
+    letter-spacing: 5px;
+    color: var(--gold-light);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.date-vintage-box {
+    margin: 25px 0;
+    border-top: 1px solid var(--border-gold-alpha);
+    border-bottom: 1px solid var(--border-gold-alpha);
+    padding: 15px 0;
+    width: 100%;
+}
+
+.save-the-date {
+    font-family: 'Alex Brush', cursive;
+    font-size: 2.5rem;
+    color: var(--gold-pure);
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.wedding-date {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-cream);
+    margin-top: 6px;
+    font-weight: 600;
+}
+
+/* Tarjetas del Reloj Digital */
+.countdown-vintage {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.time-card {
+    background: var(--card-green);
+    border: 1px solid var(--border-gold-alpha);
+    border-radius: 8px;
+    padding: 14px 0;
+    min-width: 76px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5), inset 0 0 10px rgba(212,175,55,0.05);
+}
+
+.time-card span {
+    display: block;
+    font-family: 'Cinzel', serif;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--gold-pure);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+.time-card p {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-cream);
+    margin-top: 4px;
+}
+
+/* Galería en formato de Arcos Nobles (Sin pérdida de fotos) */
+.gallery-section {
+    width: 100%;
+    background: var(--card-bg-vintage);
+    border: 1px solid var(--gold-pure);
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.65);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 15px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 85px 85px 10px 10px; 
+    border: 2px solid var(--border-gold-alpha);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+    border-color: var(--gold-pure);
+}
+
+/* Divisor Decorativo */
+.vintage-divider {
+    width: 110px;
+    height: 2px;
+    background: var(--gold-pure);
+    position: relative;
+    margin: 10px 0;
+}
+.vintage-divider::after {
+    content: "✿";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--gold-pure);
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px rgba(0,0,0,0.8);
+}
+
+/* Poema Lírico */
+.romantic-poem {
+    font-family: 'Alex Brush', cursive;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--gold-pure);
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
+
+.romantic-body {
+    font-size: 1rem;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: var(--text-cream);
+    background: rgba(26, 36, 22, 0.75);
+    padding: 22px;
+    border-radius: 8px;
+    border-left: 3px solid var(--gold-pure);
+    border-right: 3px solid var(--gold-pure);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Tarjetas Principales Moderno-Vintage */
+.card-vintage {
+    background: var(--card-bg-vintage);
+    border: 1px solid var(--gold-pure);
+    padding: 6px;
+    border-radius: 14px;
+    width: 100%;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(6px);
+}
+
+.card-inner-border {
+    border: 1px dashed var(--border-gold-alpha);
+    border-radius: 10px;
+    padding: 35px 20px;
+}
+
+.section-title-vintage {
+    font-family: 'Cinzel', serif;
+    font-size: 1.55rem;
+    letter-spacing: 3px;
+    color: var(--gold-pure);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.time-highlight {
+    font-family: 'Cinzel', serif;
+    font-size: 1.35rem;
+    color: var(--gold-light);
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.dress-style {
+    font-family: 'Cinzel', serif;
+    font-size: 1.7rem;
+    color: var(--gold-pure);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.details-text {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+.bride-restriction {
+    font-size: 0.85rem;
+    color: var(--gold-light);
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Botones con Efecto Dorado Metálico */
+.btn-vintage {
+    display: block;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    color: var(--gold-pure);
+    border: 1px solid var(--gold-pure);
+    padding: 16px 20px;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-vintage:hover {
+    background: var(--gold-pure);
+    color: var(--bg-dark-green);
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+}
+
+.btn-submit {
+    background: var(--gold-pure);
+    color: var(--bg-dark-green);
+    font-weight: 700;
+}
+
+.btn-submit:hover:not(:disabled) {
+    background: var(--gold-light);
+    color: #000;
+}
+
+.btn-submit:disabled {
+    background: #444;
+    color: #888;
+    border-color: #555;
+    cursor: not-allowed;
+}
+
+/* Inputs del Formulario */
+.form-vintage {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid var(--gold-pure);
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.45);
+}
+
+/* Notificaciones de validación */
+.message-vintage {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    display: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.message-vintage.success {
+    background: rgba(212, 175, 55, 0.25);
+    color: var(--gold-light);
+    border: 1px solid var(--gold-pure);
+}
+
+.message-vintage.error {
+    background: rgba(211, 47, 47, 0.25);
+    color: #ffcccc;
+    border: 1px solid #d32f2f;
+}
+
+.message-vintage.loading {
+    color: var(--gold-pure);
+    font-style: italic;
+    display: block;
+}
+
+/* Despliegue de Información del Invitado Registrado */
+.guest-info-vintage {
+    display: none;
+    margin-top: 22px;
+    border-top: 1px dashed var(--border-gold-alpha);
+    text-align: left;
+    background: rgba(0,0,0,0.3);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.guest-info-vintage.show {
+    display: block;
+    animation: fadeInEffect 0.5s ease-out forwards;
+}
+
+.guest-row {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    color: var(--text-cream);
+}
+
+.guest-row strong {
+    color: var(--gold-pure);
+    font-family: 'Cinzel', serif;
+}
+
+.guest-status-msg {
+    color: #a8e6cf;
+    font-size: 1rem;
+    margin-top: 12px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0 0 4px rgba(0,0,0,0.4);
+}
+
+/* Pie de Página con Esquinas de Flores en CSS Puro */
+.footer-vintage {
+    margin-top: 30px;
+    font-family: 'Alex Brush', cursive;
+    font-size: 3.2rem;
+    color: var(--gold-pure);
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.footer-sub {
+    display: block;
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-cream);
+    margin-top: -5px;
+}
+
+/* Decoraciones Florales Esquineras por Fusión Multicapa */
+.corner-flower-top-left, .corner-flower-top-right,
+.corner-flower-bottom-left, .corner-flower-bottom-right {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    background-image: url('https://images.unsplash.com/photo-1572454591674-2739f30d8c40?q=80&w=200&auto=format&fit=crop');
+    background-size: cover;
+    border-radius: 50%;
+    opacity: 0.65;
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
+
+.corner-flower-top-left { top: -20px; left: -20px; }
+.corner-flower-top-right { top: -20px; right: -20px; transform: scaleX(-1); }
+.corner-flower-bottom-left { bottom: -20px; left: -20px; transform: scaleY(-1); }
+.corner-flower-bottom-right { bottom: -20px; right: -20px; transform: scale(-1, -1); }
+
+/* Animaciones */
+.fade-in {
+    opacity: 0;
+    animation: fadeInSlide 1.2s cubic-bezier(0.1, 0.8, 0.25, 1) forwards;
+}
+
+.cover-section { animation-delay: 0.1s; }
+.gallery-section { animation-delay: 0.2s; }
+.message-section { animation-delay: 0.3s; }
+.location-section { animation-delay: 0.4s; }
+.dresscode-section { animation-delay: 0.5s; }
+.rsvp-section { animation-delay: 0.6s; }
+
+@keyframes fadeInSlide {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInEffect {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
